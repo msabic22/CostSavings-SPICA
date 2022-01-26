@@ -3,7 +3,7 @@ import { Container, Table } from 'react-bootstrap'
 import { data, processedData } from '../utils/generateData'
 import { LOADS } from '../utils/loads'
 
-const GenerateData = () => {
+const Data = () => {
     return (
         <div>
             <Container>
@@ -52,4 +52,4 @@ const GenerateData = () => {
     )
 }
 
-export default GenerateData
+export default Data
