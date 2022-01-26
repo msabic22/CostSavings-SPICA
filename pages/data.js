@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Card, Table } from 'react-bootstrap'
+import { Container, Table } from 'react-bootstrap'
 import { data, processedData } from '../utils/generateData'
 import { LOADS } from '../utils/loads'
 
@@ -7,7 +7,8 @@ const GenerateData = () => {
     return (
         <div>
             <Container>
-                <h1 className="mt-5">Generate Data</h1>
+                <h1>Sample Data</h1>
+                <h3 className="text-secondary">Single room, one month</h3>
 
                 <Table striped bordered hover className="mt-4">
                     <thead>

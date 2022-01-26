@@ -29,7 +29,7 @@ const Dashboard = () => {
     return (
         <div>
             <Container>
-                <h1 className="mt-5">Dashboard</h1>
+                <h1>Dashboard</h1>
                 <Row className="mt-5">
                     <Col lg={7} className="mb-4">
                         <div className="border rounded p-3 pb-5 h-100">

@@ -13,19 +13,19 @@ export const parametersInputData = {
         label: 'TV Wattage',
         defaultValue: 300,
         step: 10,
-        unit: 'Wh',
+        unit: 'W',
     },
     [ENERGY_PARAM_NAMES.acWattage]: {
         label: 'AC Wattage',
         defaultValue: 3000,
         step: 100,
-        unit: 'Wh',
+        unit: 'W',
     },
     [ENERGY_PARAM_NAMES.lightWattage]: {
         label: 'Light Wattage',
         defaultValue: 8,
         step: 1,
-        unit: 'Wh',
+        unit: 'W',
     },
     [HOTEL_PARAM_NAMES.roomCount]: {
         label: 'Room Count',

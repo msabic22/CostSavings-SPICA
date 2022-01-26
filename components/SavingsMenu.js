@@ -42,8 +42,7 @@ const SavingsMenu = ({ parameters }) => {
             </Tabs>
             <Container>
                 <Row>
-                    <Col xs={6}></Col>
-                    <Col>
+                    <Col sm={{ offset: 5 }}>
                         <Tabs
                             fill
                             variant="pills"

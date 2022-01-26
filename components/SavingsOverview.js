@@ -62,8 +62,25 @@ const SavingsOverview = ({ parameters, unit, period }) => {
 
     return (
         <Container className="py-4">
-            <Row className={styles.totalSavings}>
-                <Col xs={6}>
+            {LOADS.map((load) => {
+                return (
+                    <Row key={load}>
+                        <Col
+                            xs={{ offset: 2, span: 4 }}
+                            lg={{ offset: 2, span: 5 }}
+                        >
+                            <p>{load}</p>
+                        </Col>
+                        <Col>{loadSavings[load].toFixed(0) + ' ' + unit}</Col>
+                    </Row>
+                )
+            })}
+            <Row
+                className={`${styles.totalSavings} ${
+                    unit === UNIT_NAMES.hours ? 'invisible' : ''
+                }`}
+            >
+                <Col xs={{ offset: 2, span: 4 }} lg={{ offset: 2, span: 5 }}>
                     <p>Total</p>
                 </Col>
                 <Col>
@@ -74,16 +91,6 @@ const SavingsOverview = ({ parameters, unit, period }) => {
                         unit}
                 </Col>
             </Row>
-            {LOADS.map((load) => {
-                return (
-                    <Row key={load}>
-                        <Col xs={6}>
-                            <p>{load}</p>
-                        </Col>
-                        <Col>{loadSavings[load].toFixed(0) + ' ' + unit}</Col>
-                    </Row>
-                )
-            })}
         </Container>
     )
 }
