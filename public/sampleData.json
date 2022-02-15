@@ -1,0 +1,32 @@
+[
+    {
+        "index": 1,
+        "card": false,
+        "loads": {
+            "TV": false,
+            "AC": true,
+            "Light": true
+        },
+        "date": {
+            "date": "2022-01-01T02:13:01.000Z",
+            "dateTimeDisplay": "01.01.2022. 03:13",
+            "dateDisplay": "01.01.2022.",
+            "timeDisplay": "03:13"
+        }
+    },
+    {
+        "index": 2,
+        "card": true,
+        "loads": {
+            "TV": false,
+            "AC": false,
+            "Light": false
+        },
+        "date": {
+            "date": "2022-01-01T05:43:01.000Z",
+            "dateTimeDisplay": "01.01.2022. 06:43",
+            "dateDisplay": "01.01.2022.",
+            "timeDisplay": "06:43"
+        }
+    }
+]

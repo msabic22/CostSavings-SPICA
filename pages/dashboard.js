@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { parametersInputData } from '../components/ParameterInput'
 import ParametersMenu from '../components/ParametersMenu'
 import SavingsMenu from '../components/SavingsMenu'
+import { data } from '../utils/generateData'
 import { ENERGY_PARAM_NAMES, HOTEL_PARAM_NAMES } from '../utils/loads'
 
 const Dashboard = () => {

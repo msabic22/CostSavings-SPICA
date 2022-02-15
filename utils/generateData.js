@@ -20,7 +20,6 @@ let data = []
 const randBetween = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
-
 while (currentDate < endDate) {
     currentDate = addMinutes(currentDate, randBetween(3 * 60, 6 * 60))
     let newData = {
